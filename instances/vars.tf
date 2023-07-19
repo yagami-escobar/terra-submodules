@@ -24,5 +24,17 @@ variable "sg_name" {
 }
 
 variable "ingress_rules" {
+  type = map(any)
+  description = "Reglas de ingreso"
 }
 
+variable "egress_rules" {
+  type = map(any)
+  description = "Reglas de egreso"
+}
+
+
+variable "private_key" {
+  type = string
+  description = "Ruta del Private_Key"
+}
